@@ -30,8 +30,7 @@
 
 -(float)howManyBoxesCanFitInMe:(Box *)box {
     
-    float remainder = (int)[self calculateVolume] / (int)[box calculateVolume];
-    return remainder;
+    return (int)[self calculateVolume] / (int)[box calculateVolume];
 }
 
 @end

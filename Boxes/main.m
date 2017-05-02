@@ -13,16 +13,10 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         Box *firstBox = [[Box alloc]initWithHeight:10 width:10 length:5];
-        NSLog(@"The volume of firstBox is %f",[firstBox calculateVolume]);
+        NSLog(@"The volume of firstBox is %.0f magic units.",[firstBox calculateVolume]);
         Box *secondBox = [[Box alloc]initWithHeight:2 width:2 length:2];
-        NSLog(@"You can fit %f boxes of secondBox into firstBox",[firstBox howManyBoxesCanFitInMe:secondBox]);
-        
-    
-        
-        
-        
-        
-        
+        NSLog(@"The volume of secondBox is %.0f magic units.",[secondBox calculateVolume]);
+        NSLog(@"You can fit %.0f boxes of secondBox into firstBox.",[firstBox howManyBoxesCanFitInMe:secondBox]);
         
         
     }
